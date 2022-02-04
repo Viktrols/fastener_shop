@@ -90,7 +90,7 @@ class ProductSerializer(ModelSerializer):
                   'length', 'color', 'image', 'card_id')
 
     @staticmethod
-    def get_image(self, obj):
+    def get_image(obj):
         image = obj.get('image')
         return image
 
